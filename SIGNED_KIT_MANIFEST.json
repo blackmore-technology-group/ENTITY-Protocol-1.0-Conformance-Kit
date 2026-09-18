@@ -31,9 +31,9 @@
       "sha256": "474c5a80eb1af9eb45bb02eb7bec34099ffdea554630eec8dd4de30828d51de5"
     },
     {
-      "bytes": 584,
+      "bytes": 1072,
       "path": "CHANGELOG.md",
-      "sha256": "aa7bc2b95066239f63216eec934dd632c6c8369cb1a4dbc0b8c226a7bab5d4f3"
+      "sha256": "0ae836f4409a56950715c174f45edcde194ae9e0ebbefcca675f7b6288652787"
     },
     {
       "bytes": 2534,
@@ -171,9 +171,9 @@
       "sha256": "76bb287fd80bd858b4798cd616e7e475cd9e224838382363d6f81cdb6322b618"
     },
     {
-      "bytes": 1365,
+      "bytes": 1502,
       "path": "PROTOCOL_VERSION.json",
-      "sha256": "1ac1445173681e511c2d555e57a4b774790e3e16ede457f08e442ca87a615900"
+      "sha256": "3b1c5819c5ea75166446d6f07935fdc4f5a94df39d85c48e4cb89afc0a0c84ea"
     },
     {
       "bytes": 824,
@@ -186,14 +186,14 @@
       "sha256": "b9e5f2b72a05fe6af5c5da6a7280d79ee1d714ba265ff3d28c706589cd7e4c14"
     },
     {
-      "bytes": 2994,
+      "bytes": 3328,
       "path": "README.md",
-      "sha256": "e2fb772feedc0077e989498e4fd5df19f71fa6d3244e6dff64af9d716f8cb733"
+      "sha256": "68c414daec2614f2b76d8b6053105c51793e8573275284be8456dc0c0b46f923"
     },
     {
-      "bytes": 2055,
+      "bytes": 2215,
       "path": "README_FIRST.md",
-      "sha256": "d2c1992adc7e8e58d1e6c5babaf1f0a5f21a371cd44052b8931b4faa791f8a39"
+      "sha256": "16f6a7ed5645dafc528f425d9d89246d71497f2f509490f58bad283869f7aef6"
     },
     {
       "bytes": 41,
@@ -461,7 +461,9 @@
       "sha256": "d9adc4b30e6f81f4ec7fc7284980f836755632bcb6b129035051e91b29d94977"
     }
   ],
-  "claim": "Sealed public clean-room conformance target for independent ENTITY Protocol 1.0 implementation. Signature proves kit integrity and release-signer key possession; external interoperability remains pending until independently authored evidence passes every required gate.",
+  "authoritative_for_new_campaigns": true,
+  "canonical_repository": "blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit",
+  "claim": "Authoritative sealed public clean-room conformance target for new independent ENTITY Protocol 1.0 qualification campaigns. Signature proves kit integrity and release-signer key possession; external interoperability remains pending until independently authored evidence passes every required gate.",
   "clean_room": {
     "private_signer_state_distributed": false,
     "production_state_included": false,
@@ -469,9 +471,9 @@
     "vector_generation_state_included": false
   },
   "external_interoperability_status": "PENDING",
-  "generated_at_ms": 1789694400546,
-  "kit_id": "ENTITY_PROTOCOL_1_0_EXTERNAL_CONFORMANCE_KIT_v1.0",
-  "kit_version": "1.0",
+  "generated_at_ms": 1789704171238,
+  "kit_id": "ENTITY_PROTOCOL_1_0_CONFORMANCE_KIT_v1.0.1",
+  "kit_version": "1.0.1",
   "protocol": "ENTITY-1.0",
   "public_trust_root_sha256": "92f2091ac3fea80989ce38537a0087ee06ca9f748a9d1037b0a355d8ecffd0b8",
   "release_signer_entity_id": "ent2-3vutraoer24deek2uv54sbiob2xim5xejbu6lybhk7cxgptgwkwa",
@@ -479,10 +481,10 @@
   "signature": {
     "entity_id": "ent2-3vutraoer24deek2uv54sbiob2xim5xejbu6lybhk7cxgptgwkwa",
     "key_id": "sig-a3db5951877a801c",
-    "payload_sha256": "ab7299870fb853645ea54917bbd3b8f6432768e976e5c9c28afaee651d532d00",
-    "signature": "wTRkvRL5nM7m7US88t88sdBw-qoAIebv6BYocnnDwYK9i2NIONvByYA7-2ZU3rCAcVPOt2NpYKsIfYdG0wI1DA",
+    "payload_sha256": "cea7371946bb1c758f7744bdc478f255ab81ddbc8c196354ff2569fc09c58925",
+    "signature": "Nza3tBQCzmtwY_DyxMQaHf5sGo3eqWM_0rcbhrS73RO-BlAk_g3T1PEDwPZ9XDdIa1tv_-TwXuT16S5VC0cyAg",
     "signature_schema": "entity-signature-record-v2",
-    "signed_at_ms": 1789694400548,
+    "signed_at_ms": 1789704171241,
     "suite": "ENTITY-SIG-ED25519-v1"
   },
   "source_entity_public_commit": "dca93ae228ed39e4441138822ec0d0972b970f2c",

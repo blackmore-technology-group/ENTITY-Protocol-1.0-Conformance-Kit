@@ -1,5 +1,9 @@
 # ENTITY Protocol 1.0 External Conformance Kit
 
+> **AUTHORITATIVE SEALED TEST TARGET**
+>
+> This repository is the canonical Blackmore Technology Group external-conformance target for new ENTITY Protocol 1.0 qualification campaigns. Independent candidate implementations MUST live in their own repositories and MUST use a specific published release/tag of this kit.
+
 **Independent implementation target for ENTITY Protocol 1.0.**
 
 This repository exists to answer one technical question:
@@ -10,7 +14,7 @@ This repository intentionally contains **no ENTITY reference runtime, no BTG Pyt
 
 ## Kit status
 
-**ENTITY Protocol 1.0 External Conformance Kit v1.0 — SEALED EXTERNAL TEST TARGET**
+**ENTITY Protocol 1.0 External Conformance Kit v1.0.1 — AUTHORITATIVE SEALED EXTERNAL TEST TARGET**
 
 Internal prerequisites used to open this external milestone:
 - SearchAR Release Integrity v2: PASS.

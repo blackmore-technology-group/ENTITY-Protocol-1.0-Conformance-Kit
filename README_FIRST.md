@@ -1,6 +1,6 @@
-# Read This First — ENTITY Protocol 1.0 External Conformance Kit v1.0
+# Read This First — ENTITY Protocol 1.0 External Conformance Kit v1.0.1
 
-This repository is a **clean-room external conformance challenge**.
+This repository is the **authoritative sealed clean-room external conformance challenge** for new ENTITY Protocol 1.0 qualification campaigns. Use a published release/tag of this repository as the exact allowed test material.
 
 Your task is **not** to install, wrap, call, port or inspect Blackmore Technology Group's ENTITY reference implementation. Your task is to implement the observable semantics of ENTITY Protocol 1.0 from the material in this repository alone.
 
