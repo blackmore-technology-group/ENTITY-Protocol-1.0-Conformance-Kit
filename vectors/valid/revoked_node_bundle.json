@@ -1,0 +1,57 @@
+{
+  "authorization": {
+    "auth_version": 1,
+    "created_at_ms": 1789693331855,
+    "data_scopes": [],
+    "delegation": {},
+    "domain_id": "domain1-7bd5d963e7ba5160e30e8e3d9e4fafe920baa96f",
+    "entity_root": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+    "expires_at_ms": null,
+    "network_scopes": [
+      "*"
+    ],
+    "node_id": "node1-revoked-conformance",
+    "not_before_ms": 1789693331855,
+    "permitted_services": [
+      "API"
+    ],
+    "public_key_b64": "hsGrOseq-_-GJoxkOPq31_er7bJZWCKB99IskqkkSk4",
+    "publication_scopes": [
+      "API"
+    ],
+    "schema": "entity-node-authorization-v1",
+    "signature": {
+      "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+      "key_id": "sig-4c20852bc6135a1d",
+      "payload_sha256": "609e49306067a39e298ac02adefc70eece065ad5963e2b6e86f078733d89566b",
+      "signature": "3E9xFmU2swvIBxnbPWXRMOUUhcJu9K5uWcJX0WEg8EdBN1y_CkZENZU-CT7lFF6h9dpc2DCnUX7E9byI3EX_Cw",
+      "signature_schema": "entity-signature-record-v2",
+      "signed_at_ms": 1789693331856,
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "status": "ACTIVE"
+  },
+  "expected_current_authority": false,
+  "revocation": {
+    "created_at_ms": 1789693331991,
+    "domain_id": "domain1-7bd5d963e7ba5160e30e8e3d9e4fafe920baa96f",
+    "effective_at_ms": 1789693331991,
+    "entity_root": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+    "entity_root_unchanged": true,
+    "historical_evidence_preserved": true,
+    "node_id": "node1-revoked-conformance",
+    "reason": "conformance_vector_revocation",
+    "revocation_id": "rev1-27c6c170e0c34f5f17c21fb0541244f567c72cde",
+    "schema": "entity-node-revocation-v1",
+    "signature": {
+      "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+      "key_id": "sig-4c20852bc6135a1d",
+      "payload_sha256": "5a9ccf1588cd3a776c561cc04736e20668e9c65991557529dd0a6db856f5c8a0",
+      "signature": "TEzcIc520Ql-dmXp6g9T1FCy-eJi6FAXzqkabL9DsVJTbcOSwCEHLwE1-JCzEQxudYB-QKZyl-FTrLkgHhzQDg",
+      "signature_schema": "entity-signature-record-v2",
+      "signed_at_ms": 1789693331993,
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "status": "REVOKED"
+  }
+}

@@ -1,0 +1,6 @@
+ENTITY Protocol 1.0 External Conformance Kit
+Copyright 2026 Blackmore Technology Group Limited
+
+Licensed under the Apache License, Version 2.0.
+
+This repository is a clean-room protocol conformance package. It intentionally excludes the Blackmore Technology Group ENTITY reference implementation and private operational authority material.

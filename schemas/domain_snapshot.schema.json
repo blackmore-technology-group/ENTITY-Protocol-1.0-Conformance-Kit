@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "domain_snapshot.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "domain",
+    "nodes",
+    "services",
+    "migrations",
+    "btg_authority_required",
+    "cloud_host_required",
+    "dns_authority_required"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-domain-public-snapshot-v1"
+    },
+    "domain": {
+      "$ref": "domain.schema.json"
+    },
+    "name_claim": {
+      "oneOf": [
+        {
+          "$ref": "name_claim.schema.json"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "node_authorization.schema.json"
+      }
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "$ref": "service_manifest.schema.json"
+      }
+    },
+    "migrations": {
+      "type": "array"
+    },
+    "btg_authority_required": {
+      "const": false
+    },
+    "cloud_host_required": {
+      "const": false
+    },
+    "dns_authority_required": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

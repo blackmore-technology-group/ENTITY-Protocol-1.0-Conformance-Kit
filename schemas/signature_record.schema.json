@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "signature_record.schema.json",
+  "type": "object",
+  "required": [
+    "signature_schema",
+    "entity_id",
+    "key_id",
+    "suite",
+    "signed_at_ms",
+    "payload_sha256",
+    "signature"
+  ],
+  "properties": {
+    "signature_schema": {
+      "const": "entity-signature-record-v2"
+    },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "key_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "suite": {
+      "const": "ENTITY-SIG-ED25519-v1"
+    },
+    "signed_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "signature": {
+      "type": "string",
+      "minLength": 40
+    }
+  },
+  "additionalProperties": false
+}

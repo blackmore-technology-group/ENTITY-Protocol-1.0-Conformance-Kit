@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "event_envelope.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "application_entity_id",
+    "idempotency_key",
+    "event_type",
+    "payload_sha256",
+    "subject_ids",
+    "object_ids",
+    "evidence_origin",
+    "confidence",
+    "raw_payload_included"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-open-sdk-event-envelope-v1"
+    },
+    "application_entity_id": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "subject_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "object_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_origin": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "raw_payload_included": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

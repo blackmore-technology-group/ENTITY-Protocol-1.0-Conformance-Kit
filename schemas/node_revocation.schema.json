@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "node_revocation.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "revocation_id",
+    "domain_id",
+    "node_id",
+    "entity_root",
+    "reason",
+    "effective_at_ms",
+    "created_at_ms",
+    "signature"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-node-revocation-v1"
+    },
+    "revocation_id": {
+      "type": "string"
+    },
+    "domain_id": {
+      "type": "string"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "entity_root": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "effective_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "created_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "signature": {
+      "$ref": "signature_record.schema.json"
+    }
+  },
+  "additionalProperties": true
+}

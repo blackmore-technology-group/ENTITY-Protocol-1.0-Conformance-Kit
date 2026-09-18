@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "node_authorization.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "domain_id",
+    "entity_root",
+    "node_id",
+    "public_key_b64",
+    "permitted_services",
+    "network_scopes",
+    "publication_scopes",
+    "data_scopes",
+    "not_before_ms",
+    "status",
+    "auth_version",
+    "created_at_ms",
+    "signature"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-node-authorization-v1"
+    },
+    "domain_id": {
+      "type": "string"
+    },
+    "entity_root": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "public_key_b64": {
+      "type": "string"
+    },
+    "permitted_services": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "network_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publication_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "not_before_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "expires_at_ms": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "delegation": {
+      "type": "object"
+    },
+    "status": {
+      "const": "ACTIVE"
+    },
+    "auth_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "created_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "signature": {
+      "$ref": "signature_record.schema.json"
+    }
+  },
+  "additionalProperties": true
+}

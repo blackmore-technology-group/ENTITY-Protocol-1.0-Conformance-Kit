@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "resolution_proof.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "resolver_is_authority",
+    "dns_used_as_authority"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-resolution-proof-v1"
+    },
+    "resolver_is_authority": {
+      "const": false
+    },
+    "dns_used_as_authority": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

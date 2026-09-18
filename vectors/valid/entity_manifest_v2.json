@@ -1,0 +1,60 @@
+{
+  "active_signing_key_id": "sig-4c20852bc6135a1d",
+  "aliases": [
+    "conformance.principal.entity"
+  ],
+  "created_at_ms": 1789693327340,
+  "crypto_agility": {
+    "future_hybrid_allowed": true,
+    "manifest_suite": "ENTITY-SIG-ED25519-v1",
+    "supported_suites": [
+      "ENTITY-SIG-ED25519-v1"
+    ]
+  },
+  "display_name": "External Conformance Principal",
+  "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+  "entity_type": "person",
+  "manifest_revision": 1,
+  "metadata": {
+    "synthetic": true
+  },
+  "recovery_policy": {
+    "authorities": [
+      "rec-886bec9af3a472f2"
+    ],
+    "delayed_recovery_supported": true,
+    "threshold": 1
+  },
+  "schema": "sovereign-entity-manifest-v2",
+  "signature": {
+    "key_id": "sig-4c20852bc6135a1d",
+    "signature": "WpJcMJGEvmUb0Eoc8Ua_FgfLFZ5cHgIJDncN12yC0-csx1oy9jWt7Hf_AAZmRoC9mpRaYdE1OCUtREULt5nvDw",
+    "suite": "ENTITY-SIG-ED25519-v1"
+  },
+  "verification_methods": [
+    {
+      "algorithm": "Ed25519",
+      "created_at_ms": 1789693327340,
+      "key_id": "sig-4c20852bc6135a1d",
+      "public_key": "DNFUbYHa7LPJXp1-AwxrSJObyH96qQSESHUloBTkkFk",
+      "purpose": [
+        "assertion",
+        "authentication",
+        "contract"
+      ],
+      "status": "active",
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    {
+      "algorithm": "Ed25519",
+      "created_at_ms": 1789693327340,
+      "key_id": "rec-886bec9af3a472f2",
+      "public_key": "wPlQqbkakD-WYsL-71i4YrnOWokJNZ5sqK98LZQuuK4",
+      "purpose": [
+        "recovery"
+      ],
+      "status": "active",
+      "suite": "ENTITY-SIG-ED25519-v1"
+    }
+  ]
+}

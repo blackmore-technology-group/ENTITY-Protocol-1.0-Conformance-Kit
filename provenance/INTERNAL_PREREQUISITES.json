@@ -1,0 +1,19 @@
+{
+  "schema": "entity-external-conformance-internal-prerequisites-v1",
+  "searchar_release_integrity_v2": {
+    "status": "PASS",
+    "file_count": 10897,
+    "expected_files": 10897,
+    "failures": [],
+    "manifest_sha256": "432fc0ff9b86262327a5de7f6d6f2732b4602b4f7cdfde4c10847fd969e50eaf"
+  },
+  "entity_signed_distribution": {
+    "status": "PASS",
+    "release_id": "ENTITY_INTERNAL_QUALIFIED_SIGNED_2026-09-17",
+    "manifest_sha256": "b50b61c4b3f0fdbda2a6d88435a8888afa1b73dc9c966e6e34cff16625409bbf",
+    "public_trust_root_sha256": "d8d50870f7288df757d292e000c46becc4bc36763a32d453f7973733ba5a5730",
+    "private_signer_state_distributed": false,
+    "external_validation_status": "PENDING"
+  },
+  "note": "Only public-safe status/hashes are carried here; internal paths and private signer state are excluded."
+}

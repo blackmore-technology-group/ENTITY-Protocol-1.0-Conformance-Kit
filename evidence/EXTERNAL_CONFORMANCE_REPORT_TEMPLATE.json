@@ -1,0 +1,41 @@
+{
+  "schema": "entity-external-conformance-report-v1",
+  "protocol": "ENTITY-1.0",
+  "kit_version": "1.0",
+  "date": "",
+  "developer_or_organization": "",
+  "implementation": {
+    "name": "",
+    "version": "",
+    "language": "",
+    "source_repository": "",
+    "source_commit": "",
+    "build_sha256": ""
+  },
+  "protocol_freeze_sha256": "",
+  "conformance_kit_sha256": "",
+  "vector_results": {
+    "valid_accepted": 0,
+    "valid_total": 0,
+    "invalid_rejected": 0,
+    "invalid_total": 0,
+    "pass": false
+  },
+  "live_interop": {
+    "performed": false,
+    "independent_to_btg": false,
+    "btg_to_independent": false
+  },
+  "sovereign_export": {
+    "performed": false,
+    "verified_without_btg_runtime": false
+  },
+  "failures": [],
+  "limitations": [],
+  "signed_declaration": {
+    "method": "",
+    "signature": "",
+    "public_verification_reference": ""
+  },
+  "overall_pass": false
+}

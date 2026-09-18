@@ -1,0 +1,21 @@
+{
+  "application_entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+  "asset_controller_entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+  "asset_kind": "DATA",
+  "classification": "PRIVATE",
+  "content_sha256": "abc",
+  "contributors": [],
+  "explicit_rights_claim": {},
+  "idempotency_key": "conformance-asset-a-v1",
+  "media_type": "application/octet-stream",
+  "metadata": {
+    "synthetic": true,
+    "vector": "asset-a"
+  },
+  "parent_asset_ids": [],
+  "raw_content_included": false,
+  "schema": "entity-open-sdk-asset-envelope-v1.1",
+  "size_bytes": 35,
+  "source_subject_ref": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+  "title": "Conformance Asset A"
+}

@@ -1,0 +1,11 @@
+{
+  "application_entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+  "device_entity_id": "ent2-o5x7ez3ykfdcn37shhgcwvqwnup2jw3b5vabhxf6jbcyhhnlujmq",
+  "domain_id": "domain1-7bd5d963e7ba5160e30e8e3d9e4fafe920baa96f",
+  "installation_entity_id": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+  "node_id": "node1-5667c08407a21e54b7459932d465eb9f727889f8",
+  "principal_entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+  "schema": "entity-conformance-synthetic-identities-v1",
+  "service_id": "svc1-conformance-public-api",
+  "warning": "These identities exist only for public conformance vectors and carry no production authority."
+}

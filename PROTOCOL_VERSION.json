@@ -1,0 +1,20 @@
+{
+  "canonicalization_crypto_sha256": "e6f0d3389d0d545ce66b20d881eabb4f92644e03c2a2c14fda5faabfcbe20d78",
+  "domain_protocol_sha256": "c03d0a297bc1d60012f43cdf0810061535d3bd575ec11bcbd2dd6833aa8b09b2",
+  "expected_behaviour_sha256": "18060a3afb63d6df766edf824515c72a5e74312ecb21be703aacdc1688eb2a06",
+  "external_interoperability_status": "PENDING",
+  "independent_implementation_required": true,
+  "interoperability_profile_sha256": "a076649afad97bee95691fb39eaf256ac1c748a4c10e20da69561a91eb3e23b8",
+  "kit_name": "ENTITY Protocol 1.0 External Conformance Kit",
+  "kit_version": "1.0",
+  "principal_binding_profile_sha256": "aa3c66a6fea16fbbf1f3fb2196c6b3caad106ccccd475bd2779139f878d1bf9b",
+  "protocol": "ENTITY-1.0",
+  "protocol_freeze_sha256": "3b291b58766b1dfc3e3738888eefbce476070b5ba9658c23b4eaae50378c6d87",
+  "protocol_specification_sha256": "5a06da9e6e07568d7141325175e24905609f7ba5ee28af58146012b889a12fea",
+  "protocol_status": "FROZEN_FOR_EXTERNAL_CONFORMANCE",
+  "public_trust_material_sha256": "92f2091ac3fea80989ce38537a0087ee06ca9f748a9d1037b0a355d8ecffd0b8",
+  "reference_implementation_language": "Python",
+  "schema": "entity-external-conformance-kit-version-v1",
+  "source_public_entity_repo_commit": "dca93ae228ed39e4441138822ec0d0972b970f2c",
+  "vector_manifest_sha256": "d9adc4b30e6f81f4ec7fc7284980f836755632bcb6b129035051e91b29d94977"
+}

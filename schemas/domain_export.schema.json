@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "domain_export.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "identity_manifest",
+    "domain_snapshot",
+    "export_manifest",
+    "package_sha256"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-domain-export-package-v1"
+    },
+    "identity_manifest": {
+      "$ref": "entity_identity.schema.json"
+    },
+    "domain_snapshot": {
+      "type": "object"
+    },
+    "export_manifest": {
+      "type": "object",
+      "required": [
+        "schema",
+        "entity_root",
+        "domain_id",
+        "domain_snapshot_sha256",
+        "identity_manifest_sha256",
+        "schema_versions",
+        "cryptographic_algorithms",
+        "state_refs",
+        "known_external_dependencies",
+        "created_at_ms",
+        "proprietary_btg_database_required",
+        "dns_required_for_interpretation",
+        "signature"
+      ],
+      "properties": {
+        "schema": {
+          "const": "entity-domain-export-manifest-v1"
+        },
+        "entity_root": {
+          "type": "string",
+          "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+        },
+        "domain_id": {
+          "type": "string"
+        },
+        "domain_snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "identity_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "schema_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cryptographic_algorithms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "state_refs": {
+          "type": "object"
+        },
+        "known_external_dependencies": {
+          "type": "array"
+        },
+        "created_at_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "proprietary_btg_database_required": {
+          "const": false
+        },
+        "dns_required_for_interpretation": {
+          "const": false
+        },
+        "signature": {
+          "$ref": "signature_record.schema.json"
+        }
+      },
+      "additionalProperties": true
+    },
+    "package_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

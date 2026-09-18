@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "revoked_node_bundle.schema.json",
+  "type": "object",
+  "required": [
+    "authorization",
+    "revocation",
+    "expected_current_authority"
+  ],
+  "properties": {
+    "authorization": {
+      "$ref": "node_authorization.schema.json"
+    },
+    "revocation": {
+      "$ref": "node_revocation.schema.json"
+    },
+    "expected_current_authority": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}

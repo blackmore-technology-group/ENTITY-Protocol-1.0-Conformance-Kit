@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "service_manifest.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "entity_root",
+    "domain_id",
+    "service_id",
+    "service_type",
+    "node_id",
+    "endpoint",
+    "protocol_version",
+    "capabilities",
+    "access_class",
+    "required_credentials",
+    "policy_refs",
+    "data_classifications",
+    "manifest_version",
+    "status",
+    "created_at_ms",
+    "signature"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-service-manifest-v1"
+    },
+    "entity_root": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "domain_id": {
+      "type": "string"
+    },
+    "domain_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "service_type": {
+      "type": "string"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "endpoint": {
+      "type": "object"
+    },
+    "protocol_version": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "access_class": {
+      "type": "string"
+    },
+    "required_credentials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policy_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_classifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "economic_terms_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "availability": {
+      "type": "object"
+    },
+    "manifest_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "expires_at_ms": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "status": {
+      "const": "ACTIVE"
+    },
+    "created_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_data_custody_transferred": {
+      "const": false
+    },
+    "provider_authority_inferred": {
+      "const": false
+    },
+    "signature": {
+      "$ref": "signature_record.schema.json"
+    }
+  },
+  "additionalProperties": true
+}

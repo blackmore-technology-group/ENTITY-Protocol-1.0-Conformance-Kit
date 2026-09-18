@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relationship.schema.json",
+  "type": "object",
+  "required": [
+    "relationship_id",
+    "entity_id",
+    "party_ref",
+    "relationship_type",
+    "scope",
+    "evidence_origin",
+    "status",
+    "created_at_ms",
+    "effective_at_ms",
+    "signature"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "pattern": "^srel1-[0-9a-f]{40}$"
+    },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "party_ref": {
+      "type": "string"
+    },
+    "relationship_type": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "evidence_origin": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "REVOKED"
+      ]
+    },
+    "created_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "effective_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "expires_at_ms": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "revoked_at_ms": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "signature": {
+      "$ref": "signature_record.schema.json"
+    }
+  },
+  "additionalProperties": true
+}

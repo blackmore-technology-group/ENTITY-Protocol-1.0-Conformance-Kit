@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "name_claim.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "claim_id",
+    "domain_id",
+    "entity_root",
+    "normalized_name",
+    "namespace",
+    "status",
+    "conflict_state",
+    "created_at_ms",
+    "signature"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-name-claim-v1"
+    },
+    "claim_id": {
+      "type": "string"
+    },
+    "domain_id": {
+      "type": "string"
+    },
+    "entity_root": {
+      "type": "string",
+      "pattern": "^(ent1|ent2)-[a-z2-7]{52}$"
+    },
+    "normalized_name": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "conflict_state": {
+      "enum": [
+        "CLEAR",
+        "CONFLICT"
+      ]
+    },
+    "created_at_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "first_seen_is_not_ownership": {
+      "const": true
+    },
+    "dns_possession_is_not_authority": {
+      "const": true
+    },
+    "signature": {
+      "$ref": "signature_record.schema.json"
+    }
+  },
+  "additionalProperties": true
+}

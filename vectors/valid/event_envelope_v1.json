@@ -1,0 +1,16 @@
+{
+  "application_entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+  "confidence": 1.0,
+  "event_type": "data.conformance.observed",
+  "evidence_origin": "DIRECT_OBSERVATION",
+  "idempotency_key": "conformance-event-v1",
+  "object_ids": [
+    "asset1-3ed350e2ac924f9faab84ee4172d80b2"
+  ],
+  "payload_sha256": "9565524fd6c1c34b337a303e689aa369fba62452e5a418ebc2ee33f008879b55",
+  "raw_payload_included": false,
+  "schema": "entity-open-sdk-event-envelope-v1",
+  "subject_ids": [
+    "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q"
+  ]
+}

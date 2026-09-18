@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "principal_binding_bundle.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "principal_manifest",
+    "application_manifest",
+    "device_manifest",
+    "installation_manifest",
+    "relationships",
+    "binding"
+  ],
+  "properties": {
+    "schema": {
+      "const": "entity-principal-binding-conformance-bundle-v1"
+    },
+    "principal_manifest": {
+      "$ref": "entity_identity.schema.json"
+    },
+    "application_manifest": {
+      "$ref": "entity_identity.schema.json"
+    },
+    "device_manifest": {
+      "$ref": "entity_identity.schema.json"
+    },
+    "installation_manifest": {
+      "$ref": "entity_identity.schema.json"
+    },
+    "relationships": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object"
+      }
+    },
+    "binding": {
+      "$ref": "principal_binding.schema.json"
+    }
+  },
+  "additionalProperties": false
+}

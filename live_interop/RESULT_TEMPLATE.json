@@ -1,0 +1,31 @@
+{
+  "schema": "entity-external-live-interop-result-v1",
+  "protocol": "ENTITY-1.0",
+  "kit_hash": "",
+  "btg_release": "",
+  "independent_implementation": "",
+  "independent_commit": "",
+  "independent_to_btg": {
+    "pass": false,
+    "evidence": []
+  },
+  "btg_to_independent": {
+    "pass": false,
+    "evidence": []
+  },
+  "principal_binding_bidirectional_agreement": {
+    "pass": false,
+    "evidence": []
+  },
+  "provenance_lineage": {
+    "pass": false,
+    "evidence": []
+  },
+  "sovereign_export_survival": {
+    "pass": false,
+    "btg_runtime_required": null,
+    "evidence": []
+  },
+  "limitations": [],
+  "overall_pass": false
+}

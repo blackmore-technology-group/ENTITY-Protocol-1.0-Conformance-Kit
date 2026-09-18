@@ -1,0 +1,34 @@
+{
+  "auth_version": 1,
+  "created_at_ms": 1789693331602,
+  "data_scopes": [
+    "PUBLIC"
+  ],
+  "delegation": {},
+  "domain_id": "domain1-7bd5d963e7ba5160e30e8e3d9e4fafe920baa96f",
+  "entity_root": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+  "expires_at_ms": null,
+  "network_scopes": [
+    "internet"
+  ],
+  "node_id": "node1-tampered",
+  "not_before_ms": 1789693331602,
+  "permitted_services": [
+    "API"
+  ],
+  "public_key_b64": "JfhK3HHdhzrYmLcSA9UVYlGlHEtL1WDelyWw5e7Cnjk",
+  "publication_scopes": [
+    "API"
+  ],
+  "schema": "entity-node-authorization-v1",
+  "signature": {
+    "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+    "key_id": "sig-4c20852bc6135a1d",
+    "payload_sha256": "e10f4ff5a51636bb5b2a4d5806b30b10999aac56fcad654c273c2122b1913ffe",
+    "signature": "Hod2ROdCsS_qrFp-iVt2qrjD239F2oV5ABdQUlO5ILksyg3BQt_3tEHOvUfyVLXcy9Q3omxWnW4WJAEsgSnWBw",
+    "signature_schema": "entity-signature-record-v2",
+    "signed_at_ms": 1789693331604,
+    "suite": "ENTITY-SIG-ED25519-v1"
+  },
+  "status": "ACTIVE"
+}

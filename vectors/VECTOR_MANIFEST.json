@@ -1,0 +1,283 @@
+{
+  "kit_version": "1.0",
+  "protocol": "ENTITY-1.0",
+  "schema": "entity-external-conformance-vector-manifest-v1",
+  "vectors": [
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "entity_manifest_v2",
+      "kind": "entity_manifest",
+      "path": "vectors/valid/entity_manifest_v2.json",
+      "sha256": "962153ecba6936ca586460986907c016c7cfb196cae8415f10a959cdfb22d501"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "principal_binding_bundle",
+      "kind": "principal_binding_bundle",
+      "path": "vectors/valid/principal_binding_bundle.json",
+      "sha256": "c10dcc6de3a5991160c2d149ed5a6572b98097a5bacb7cf556647bdccbbebda3"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "asset_envelope_v1_1",
+      "kind": "asset_envelope",
+      "path": "vectors/valid/asset_envelope_v1_1.json",
+      "sha256": "5bd173305038cab1a2defe84bf9e1184fe6f1fd86b513c6c6b230e0ed7b54f0c"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "event_envelope_v1",
+      "kind": "event_envelope",
+      "path": "vectors/valid/event_envelope_v1.json",
+      "sha256": "68085fd9d420833ed94250da7327ff417486f71ed70f7db261f60ab5002bf2c1"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "facts": {
+          "economic_value_inferred": false,
+          "ownership_inferred": false,
+          "parent_asset_id": "asset1-3ed350e2ac924f9faab84ee4172d80b2"
+        },
+        "reason_category": "valid"
+      },
+      "id": "asset_lineage_bundle",
+      "kind": "asset_lineage_bundle",
+      "path": "vectors/valid/asset_lineage_bundle.json",
+      "sha256": "778882da4edc277bfa15969feffc3960b87e603ce6e6de4e8ab6de3be520d480"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "domain_snapshot",
+      "kind": "domain_snapshot",
+      "path": "vectors/valid/domain_snapshot.json",
+      "sha256": "004cd26c9f84c0ca12aec2a5f05d66f5a64ed5005a0e64a0a139358259465fc2"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "node_authorization",
+      "kind": "node_authorization",
+      "path": "vectors/valid/node_authorization.json",
+      "sha256": "da97bd0b2f85dcdcd27516072b0ac583ce40525e82423b3938c360f167c3b3a9"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "reason_category": "valid"
+      },
+      "id": "service_manifest",
+      "kind": "service_manifest",
+      "path": "vectors/valid/service_manifest.json",
+      "sha256": "57931f0d39b907c7e19faacb3c257db93fdf3d0a36cef2bf442ab6fbc715420b"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "facts": {
+          "dns_used_as_authority": false,
+          "resolver_is_authority": false
+        },
+        "reason_category": "valid"
+      },
+      "id": "resolution_proof",
+      "kind": "resolution_proof",
+      "path": "vectors/valid/resolution_proof.json",
+      "sha256": "c3a6cd39c474d4d60e02b920bfbadbed00432fc6a5ef43e4afb7c1d0d53a52d4"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "facts": {
+          "dns_required_for_interpretation": false,
+          "proprietary_btg_database_required": false
+        },
+        "reason_category": "valid"
+      },
+      "id": "domain_export_package",
+      "kind": "domain_export",
+      "path": "vectors/valid/domain_export_package.json",
+      "sha256": "39dc5b724c10b5c00ebe1c20cd9b04b427f2fbe903ef7165b79d393e7cc9cbe0"
+    },
+    {
+      "expected": {
+        "accepted": true,
+        "facts": {
+          "current_authority": false
+        },
+        "reason_category": "valid_bundle_contains_revocation"
+      },
+      "id": "revoked_node_bundle",
+      "kind": "revoked_node_bundle",
+      "path": "vectors/valid/revoked_node_bundle.json",
+      "sha256": "31bb2393081a76997d3edd2ecf0b0aeda4ff4bb1392d59862d7a0ecc831cb658"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "signature_invalid"
+      },
+      "id": "entity_manifest_tampered",
+      "kind": "entity_manifest",
+      "path": "vectors/invalid/entity_manifest_tampered.json",
+      "sha256": "cb3dbc4edf44c7c97373eb21fe9d9381360e8d2df836ab5aeceacd45700632e8"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "identity_or_signature_invalid"
+      },
+      "id": "entity_manifest_wrong_entity_id",
+      "kind": "entity_manifest",
+      "path": "vectors/invalid/entity_manifest_wrong_entity_id.json",
+      "sha256": "fd68fca3c566c58a922b1306f70296306d3eb223ddf3a203216ba2b1f156cd51"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "binding_hash_or_installation_binding_mismatch"
+      },
+      "id": "principal_binding_wrong_application",
+      "kind": "principal_binding_bundle",
+      "path": "vectors/invalid/principal_binding_wrong_application.json",
+      "sha256": "8f687be450250fc42f4353c8bcb4718faae748ef8f456b7d7bb28bd501ecae04"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "binding_hash_mismatch"
+      },
+      "id": "principal_binding_bad_hash",
+      "kind": "principal_binding_bundle",
+      "path": "vectors/invalid/principal_binding_bad_hash.json",
+      "sha256": "6da759b0a2ad4bd2a62c462ca6511d34517f4a68468a4058285c2c008c176783"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "principal_signature_invalid"
+      },
+      "id": "principal_binding_bad_signature",
+      "kind": "principal_binding_bundle",
+      "path": "vectors/invalid/principal_binding_bad_signature.json",
+      "sha256": "6e188dc9aa4c59a0bba1be11905e6c8f041db397eb623a7e60ff60fdebfbbf47"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "raw_content_forbidden"
+      },
+      "id": "asset_envelope_raw_content_true",
+      "kind": "asset_envelope",
+      "path": "vectors/invalid/asset_envelope_raw_content_true.json",
+      "sha256": "6370eeab782eb46aa3c1c93a3f4047ab34948fd08b478ae013633ed6d6d505a1"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "sha256_invalid"
+      },
+      "id": "asset_envelope_bad_sha256",
+      "kind": "asset_envelope",
+      "path": "vectors/invalid/asset_envelope_bad_sha256.json",
+      "sha256": "bb5e613a34cb9bda2a71c3305982a0cb749308ee13236f7f7c911d92213d7774"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "asset_kind_invalid"
+      },
+      "id": "asset_envelope_bad_kind",
+      "kind": "asset_envelope",
+      "path": "vectors/invalid/asset_envelope_bad_kind.json",
+      "sha256": "6d8d9ad59a985edf59da5619d9445ba7e8d2f86ea04fcfe3dbb12aba9b277b47"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "authority_or_economic_bypass_forbidden"
+      },
+      "id": "event_envelope_forbidden_payment",
+      "kind": "event_envelope",
+      "path": "vectors/invalid/event_envelope_forbidden_payment.json",
+      "sha256": "eb86613cc40a59ab03a56c8385f7435d51f19d63fc537c76800fdbae52d8b107"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "raw_payload_forbidden"
+      },
+      "id": "event_envelope_raw_payload_true",
+      "kind": "event_envelope",
+      "path": "vectors/invalid/event_envelope_raw_payload_true.json",
+      "sha256": "ec44c17ce64a586d4ada4d47660b0151972b58eaa6db7e52c113bbff9c1ee5f3"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "sha256_invalid"
+      },
+      "id": "event_envelope_bad_sha256",
+      "kind": "event_envelope",
+      "path": "vectors/invalid/event_envelope_bad_sha256.json",
+      "sha256": "099e2200c2524b8a35bbf3bf9315aef7aaa8710e359b23923a057501033ad385"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "signature_invalid"
+      },
+      "id": "node_authorization_tampered",
+      "kind": "node_authorization",
+      "path": "vectors/invalid/node_authorization_tampered.json",
+      "sha256": "0ee2f3f150e242192af516d3a2e7ac1fca42f8441cba7b05920a1f43e451b740"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "signature_or_node_binding_invalid"
+      },
+      "id": "service_manifest_wrong_node",
+      "kind": "service_manifest",
+      "path": "vectors/invalid/service_manifest_wrong_node.json",
+      "sha256": "bc8647cc5c4b5f8770e17f8d7a1684def1b8b10798205faf23bd2ce65face005"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "package_hash_or_root_binding_invalid"
+      },
+      "id": "domain_export_root_tampered",
+      "kind": "domain_export",
+      "path": "vectors/invalid/domain_export_root_tampered.json",
+      "sha256": "99c7aa82f50a14f5958e8a64799f3f304c7e4f752addbe50fa3f9e6abb13a371"
+    },
+    {
+      "expected": {
+        "accepted": false,
+        "reason_category": "package_hash_invalid"
+      },
+      "id": "domain_export_bad_package_hash",
+      "kind": "domain_export",
+      "path": "vectors/invalid/domain_export_bad_package_hash.json",
+      "sha256": "b734451dba4d96ad40a4bca36d0f8fe3776a9252902a5d44ae0e85f86345db78"
+    }
+  ]
+}

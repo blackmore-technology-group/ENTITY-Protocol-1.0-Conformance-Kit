@@ -1,0 +1,388 @@
+{
+  "application_manifest": {
+    "active_signing_key_id": "sig-3535ca6099249ee1",
+    "aliases": [
+      "conformance.application.entity"
+    ],
+    "created_at_ms": 1789693327365,
+    "crypto_agility": {
+      "future_hybrid_allowed": true,
+      "manifest_suite": "ENTITY-SIG-ED25519-v1",
+      "supported_suites": [
+        "ENTITY-SIG-ED25519-v1"
+      ]
+    },
+    "display_name": "External Conformance Application",
+    "entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+    "entity_type": "application",
+    "manifest_revision": 1,
+    "metadata": {
+      "alias_is_not_authority": true,
+      "application_alias": "conformance.application.entity",
+      "asset_ownership_not_inferred": true,
+      "entity_sdk_profile": "ENTITY_OPEN_SDK_v1",
+      "synthetic": true
+    },
+    "recovery_policy": {
+      "authorities": [
+        "rec-a9ec954e09f359d5"
+      ],
+      "delayed_recovery_supported": true,
+      "threshold": 1
+    },
+    "schema": "sovereign-entity-manifest-v2",
+    "signature": {
+      "key_id": "sig-3535ca6099249ee1",
+      "signature": "UhAFxTd57yXUB5jLzeWsCTX0Qx8zZf3zZg-F59z2SYDYr4cwWr7ZWXw90QFM6ho99zDpu9XPBxrt4_9sly66Dw",
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "verification_methods": [
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693327365,
+        "key_id": "sig-3535ca6099249ee1",
+        "public_key": "Q37Kb_mCQ0hCw5r6-T7b1HgWQPPWv6VQmu5YRkK72xI",
+        "purpose": [
+          "assertion",
+          "authentication",
+          "contract"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693327365,
+        "key_id": "rec-a9ec954e09f359d5",
+        "public_key": "T3b3QN_FpAs49K1ZxFB7sB2751dfgbuMM7mV9pdpGYE",
+        "purpose": [
+          "recovery"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      }
+    ]
+  },
+  "binding": {
+    "address": {
+      "alias_binding_sha256": "81aabff45b499415aa7fcea9c5f3ac6d56a63872972dac75c47cc2642501b70f",
+      "alias_is_authority": false,
+      "collision_safe_display": "conformance.installation.entity~81aabff45b49",
+      "display_alias": "conformance.installation.entity",
+      "domain_id": null,
+      "entity_address": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+      "entity_address_is_authority": true,
+      "entity_address_sha256": "f5a6a1ac07bce6998b051f25a86f8e83c2cc5133f5148bcea48f8147f37d908a",
+      "namespace": "entity",
+      "schema": "entity-address-descriptor-v1"
+    },
+    "application_entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+    "binding_id": "pbind1-20f068699791436ea863489165f001cd",
+    "binding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "delegated_actions": [
+      "INGEST_ASSET",
+      "RECORD_EVENT"
+    ],
+    "device_entity_id": "ent2-o5x7ez3ykfdcn37shhgcwvqwnup2jw3b5vabhxf6jbcyhhnlujmq",
+    "installation_alias": "conformance.installation.entity",
+    "installation_entity_id": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+    "issued_at_ms": 1789693328639,
+    "principal_entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+    "principal_pairwise_ref": "rel1-uf3y27rv5vkx645m6giomksjfdga3g56whgpzwaa56mihtsvhhga",
+    "principal_signature": {
+      "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+      "key_id": "sig-4c20852bc6135a1d",
+      "payload_sha256": "4ee687d0c84e1e763bc5fa331416afcc307e7f197feba019fcb0166cddc61fbf",
+      "signature": "0Ea_iySWAQ52cnO0IJI4jGUPhP_uUvdTm1mZR_s0sytCpjKFW2wbk5DJPFOGi_xo2f2-NZeP5UIaqcomla3_Ag",
+      "signature_schema": "entity-signature-record-v2",
+      "signed_at_ms": 1789693328640,
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "relationships": {
+      "application": "srel1-de49c5ef1a3ef819436163e9740a4520e04ce077",
+      "device": "srel1-def6ddbcc80076c254d96f00f955f59e63cf2a78",
+      "principal": "srel1-9f3a10f75a4a9d5dcf98d8bc4122eb825a07c1be"
+    },
+    "schema": "entity-principal-binding-v1",
+    "status": "ACTIVE"
+  },
+  "device_manifest": {
+    "active_signing_key_id": "sig-10e489dcc53a13b2",
+    "aliases": [
+      "conformance.device.entity"
+    ],
+    "created_at_ms": 1789693327347,
+    "crypto_agility": {
+      "future_hybrid_allowed": true,
+      "manifest_suite": "ENTITY-SIG-ED25519-v1",
+      "supported_suites": [
+        "ENTITY-SIG-ED25519-v1"
+      ]
+    },
+    "display_name": "External Conformance Device",
+    "entity_id": "ent2-o5x7ez3ykfdcn37shhgcwvqwnup2jw3b5vabhxf6jbcyhhnlujmq",
+    "entity_type": "system",
+    "manifest_revision": 1,
+    "metadata": {
+      "synthetic": true
+    },
+    "recovery_policy": {
+      "authorities": [
+        "rec-944dc9f9f5b7e520"
+      ],
+      "delayed_recovery_supported": true,
+      "threshold": 1
+    },
+    "schema": "sovereign-entity-manifest-v2",
+    "signature": {
+      "key_id": "sig-10e489dcc53a13b2",
+      "signature": "uOKqq_SYtWObQcSeMyqs72DqmSW6Y2yytfDsEbjVCFU-6rF-DpcuiGbUdzhtY7rRTFP5VlLX427gA9EhN23dCA",
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "verification_methods": [
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693327347,
+        "key_id": "sig-10e489dcc53a13b2",
+        "public_key": "m-fM3VHBkIAMxTzO1D-1ieUPZhY17-UAiJRTBsHG6Bg",
+        "purpose": [
+          "assertion",
+          "authentication",
+          "contract"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693327347,
+        "key_id": "rec-944dc9f9f5b7e520",
+        "public_key": "SA3tdNIUh1F-DU-6pMeoCDeyrwOfBzzv7xxckY6Whio",
+        "purpose": [
+          "recovery"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      }
+    ]
+  },
+  "installation_manifest": {
+    "active_signing_key_id": "sig-ce13f8c68a3e2b6f",
+    "aliases": [
+      "conformance.installation.entity"
+    ],
+    "created_at_ms": 1789693328309,
+    "crypto_agility": {
+      "future_hybrid_allowed": true,
+      "manifest_suite": "ENTITY-SIG-ED25519-v1",
+      "supported_suites": [
+        "ENTITY-SIG-ED25519-v1"
+      ]
+    },
+    "display_name": "External Conformance Installation",
+    "entity_id": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+    "entity_type": "application",
+    "manifest_revision": 1,
+    "metadata": {
+      "application_entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+      "authority_scope": "DATA_PROVENANCE_CAPTURE_ONLY",
+      "binding_schema": "entity-principal-binding-v1",
+      "delegated_installation": true,
+      "device_entity_id": "ent2-o5x7ez3ykfdcn37shhgcwvqwnup2jw3b5vabhxf6jbcyhhnlujmq",
+      "entity_subtype": "application_installation",
+      "ownership_not_inferred": true,
+      "principal_entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+      "synthetic": true
+    },
+    "recovery_policy": {
+      "authorities": [
+        "rec-d97f0f7567c95060"
+      ],
+      "delayed_recovery_supported": true,
+      "threshold": 1
+    },
+    "schema": "sovereign-entity-manifest-v2",
+    "signature": {
+      "key_id": "sig-ce13f8c68a3e2b6f",
+      "signature": "J1IveCH4_RSxehDQqKN8UUDvvsaOOkVDrFjhfnI7_0R2TTD-LzrhoEU9YrNUdLSA6rN7p9si0a5cEvdHytz7BQ",
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "verification_methods": [
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693328309,
+        "key_id": "sig-ce13f8c68a3e2b6f",
+        "public_key": "2oAY3F7y1f80HHfH1lk-RYxE8DPRnU4_EKr09Dj7AWI",
+        "purpose": [
+          "assertion",
+          "authentication",
+          "contract"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693328309,
+        "key_id": "rec-d97f0f7567c95060",
+        "public_key": "HOSsAluuAI1EY7KthE6bJbWOodRAuJgIkES6mwJPDJI",
+        "purpose": [
+          "recovery"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      }
+    ]
+  },
+  "principal_manifest": {
+    "active_signing_key_id": "sig-4c20852bc6135a1d",
+    "aliases": [
+      "conformance.principal.entity"
+    ],
+    "created_at_ms": 1789693327340,
+    "crypto_agility": {
+      "future_hybrid_allowed": true,
+      "manifest_suite": "ENTITY-SIG-ED25519-v1",
+      "supported_suites": [
+        "ENTITY-SIG-ED25519-v1"
+      ]
+    },
+    "display_name": "External Conformance Principal",
+    "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+    "entity_type": "person",
+    "manifest_revision": 1,
+    "metadata": {
+      "synthetic": true
+    },
+    "recovery_policy": {
+      "authorities": [
+        "rec-886bec9af3a472f2"
+      ],
+      "delayed_recovery_supported": true,
+      "threshold": 1
+    },
+    "schema": "sovereign-entity-manifest-v2",
+    "signature": {
+      "key_id": "sig-4c20852bc6135a1d",
+      "signature": "WpJcMJGEvmUb0Eoc8Ua_FgfLFZ5cHgIJDncN12yC0-csx1oy9jWt7Hf_AAZmRoC9mpRaYdE1OCUtREULt5nvDw",
+      "suite": "ENTITY-SIG-ED25519-v1"
+    },
+    "verification_methods": [
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693327340,
+        "key_id": "sig-4c20852bc6135a1d",
+        "public_key": "DNFUbYHa7LPJXp1-AwxrSJObyH96qQSESHUloBTkkFk",
+        "purpose": [
+          "assertion",
+          "authentication",
+          "contract"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      {
+        "algorithm": "Ed25519",
+        "created_at_ms": 1789693327340,
+        "key_id": "rec-886bec9af3a472f2",
+        "public_key": "wPlQqbkakD-WYsL-71i4YrnOWokJNZ5sqK98LZQuuK4",
+        "purpose": [
+          "recovery"
+        ],
+        "status": "active",
+        "suite": "ENTITY-SIG-ED25519-v1"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "created_at_ms": 1789693328493,
+      "effective_at_ms": 1789693328493,
+      "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+      "evidence": {
+        "binding_schema": "entity-principal-binding-v1"
+      },
+      "evidence_origin": "ENTITY_ASSERTION",
+      "expires_at_ms": null,
+      "party_ref": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+      "relationship_id": "srel1-9f3a10f75a4a9d5dcf98d8bc4122eb825a07c1be",
+      "relationship_type": "SOVEREIGN_AUTHORITY",
+      "revoked_at_ms": null,
+      "scope": {
+        "application_ownership_not_transferred": true,
+        "data_controller_defaults_to_principal": true,
+        "delegated_actions": [
+          "INGEST_ASSET",
+          "RECORD_EVENT"
+        ],
+        "revocable": true
+      },
+      "signature": {
+        "entity_id": "ent2-irkeauzvskjivrmrtfdafilptssgrn5w6cnkjlonucvny6pnpe6q",
+        "key_id": "sig-4c20852bc6135a1d",
+        "payload_sha256": "e841c95e089611d14de7c84e705502e5ca3350b9d982f105ae859118f1abd5a3",
+        "signature": "7fpQRSynh8wCkN_KTIauFjFBqyJLn0ekc4r5lap2zrNYW0J3V6hyiUU8Yxy41vGjmFyrlqrtd006EeNrfkCUCQ",
+        "signature_schema": "entity-signature-record-v2",
+        "signed_at_ms": 1789693328503,
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      "status": "ACTIVE"
+    },
+    {
+      "created_at_ms": 1789693328414,
+      "effective_at_ms": 1789693328414,
+      "entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+      "evidence": {
+        "binding_schema": "entity-principal-binding-v1"
+      },
+      "evidence_origin": "ENTITY_ASSERTION",
+      "expires_at_ms": null,
+      "party_ref": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+      "relationship_id": "srel1-de49c5ef1a3ef819436163e9740a4520e04ce077",
+      "relationship_type": "PROCESSING_AUTHORITY",
+      "revoked_at_ms": null,
+      "scope": {
+        "application_instance_of": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+        "data_rights_not_transferred": true
+      },
+      "signature": {
+        "entity_id": "ent2-2kv7slg44kewgtkvjcen45bthojaxpzpzyl3oaybwjjbjoxkw4eq",
+        "key_id": "sig-3535ca6099249ee1",
+        "payload_sha256": "110bb9876caeed762866a7c7708c97fccbc2164e049971b7848467c565c93f1d",
+        "signature": "twl5_J6mccE5Qk6iNm9UUL6kQhGQwCPKWccXzr9ZY0kdM_IkdKjfJJLkvbcAyKe0qOClctVSKTz7Ewu-zcS-Ag",
+        "signature_schema": "entity-signature-record-v2",
+        "signed_at_ms": 1789693328417,
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      "status": "ACTIVE"
+    },
+    {
+      "created_at_ms": 1789693328323,
+      "effective_at_ms": 1789693328323,
+      "entity_id": "ent2-o5x7ez3ykfdcn37shhgcwvqwnup2jw3b5vabhxf6jbcyhhnlujmq",
+      "evidence": {
+        "binding_schema": "entity-principal-binding-v1"
+      },
+      "evidence_origin": "ENTITY_ASSERTION",
+      "expires_at_ms": null,
+      "party_ref": "ent2-sqjr2om4f22u4g7vxdyj5t5inf5fmtjsi3ikfgtb67zqnuclb3qa",
+      "relationship_id": "srel1-def6ddbcc80076c254d96f00f955f59e63cf2a78",
+      "relationship_type": "POSSESSION",
+      "revoked_at_ms": null,
+      "scope": {
+        "device_possession_not_ownership": true,
+        "installed_instance": true
+      },
+      "signature": {
+        "entity_id": "ent2-o5x7ez3ykfdcn37shhgcwvqwnup2jw3b5vabhxf6jbcyhhnlujmq",
+        "key_id": "sig-10e489dcc53a13b2",
+        "payload_sha256": "87beda6e503b4046b6fe727236f5ca64148fd41f40058da85e44c208c4f728ec",
+        "signature": "Pfumr3aWVKzgmBoTfNfZeL1fbrtFiKPCsXNpRkNYPnY6efc2i4J6MrVr8UEW1LQiCYWCaxTUi_Wi82UyQd6SDA",
+        "signature_schema": "entity-signature-record-v2",
+        "signed_at_ms": 1789693328336,
+        "suite": "ENTITY-SIG-ED25519-v1"
+      },
+      "status": "ACTIVE"
+    }
+  ]
+}

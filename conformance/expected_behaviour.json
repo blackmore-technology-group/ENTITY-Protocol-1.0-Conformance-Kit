@@ -1,0 +1,178 @@
+{
+  "protocol": "ENTITY-1.0",
+  "schema": "entity-external-conformance-expected-behaviour-v1",
+  "vector_expectations": [
+    {
+      "accepted": true,
+      "id": "entity_manifest_v2",
+      "kind": "entity_manifest",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "id": "principal_binding_bundle",
+      "kind": "principal_binding_bundle",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "id": "asset_envelope_v1_1",
+      "kind": "asset_envelope",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "id": "event_envelope_v1",
+      "kind": "event_envelope",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "facts": {
+        "economic_value_inferred": false,
+        "ownership_inferred": false,
+        "parent_asset_id": "asset1-3ed350e2ac924f9faab84ee4172d80b2"
+      },
+      "id": "asset_lineage_bundle",
+      "kind": "asset_lineage_bundle",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "id": "domain_snapshot",
+      "kind": "domain_snapshot",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "id": "node_authorization",
+      "kind": "node_authorization",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "id": "service_manifest",
+      "kind": "service_manifest",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "facts": {
+        "dns_used_as_authority": false,
+        "resolver_is_authority": false
+      },
+      "id": "resolution_proof",
+      "kind": "resolution_proof",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "facts": {
+        "dns_required_for_interpretation": false,
+        "proprietary_btg_database_required": false
+      },
+      "id": "domain_export_package",
+      "kind": "domain_export",
+      "reason_category": "valid"
+    },
+    {
+      "accepted": true,
+      "facts": {
+        "current_authority": false
+      },
+      "id": "revoked_node_bundle",
+      "kind": "revoked_node_bundle",
+      "reason_category": "valid_bundle_contains_revocation"
+    },
+    {
+      "accepted": false,
+      "id": "entity_manifest_tampered",
+      "kind": "entity_manifest",
+      "reason_category": "signature_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "entity_manifest_wrong_entity_id",
+      "kind": "entity_manifest",
+      "reason_category": "identity_or_signature_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "principal_binding_wrong_application",
+      "kind": "principal_binding_bundle",
+      "reason_category": "binding_hash_or_installation_binding_mismatch"
+    },
+    {
+      "accepted": false,
+      "id": "principal_binding_bad_hash",
+      "kind": "principal_binding_bundle",
+      "reason_category": "binding_hash_mismatch"
+    },
+    {
+      "accepted": false,
+      "id": "principal_binding_bad_signature",
+      "kind": "principal_binding_bundle",
+      "reason_category": "principal_signature_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "asset_envelope_raw_content_true",
+      "kind": "asset_envelope",
+      "reason_category": "raw_content_forbidden"
+    },
+    {
+      "accepted": false,
+      "id": "asset_envelope_bad_sha256",
+      "kind": "asset_envelope",
+      "reason_category": "sha256_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "asset_envelope_bad_kind",
+      "kind": "asset_envelope",
+      "reason_category": "asset_kind_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "event_envelope_forbidden_payment",
+      "kind": "event_envelope",
+      "reason_category": "authority_or_economic_bypass_forbidden"
+    },
+    {
+      "accepted": false,
+      "id": "event_envelope_raw_payload_true",
+      "kind": "event_envelope",
+      "reason_category": "raw_payload_forbidden"
+    },
+    {
+      "accepted": false,
+      "id": "event_envelope_bad_sha256",
+      "kind": "event_envelope",
+      "reason_category": "sha256_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "node_authorization_tampered",
+      "kind": "node_authorization",
+      "reason_category": "signature_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "service_manifest_wrong_node",
+      "kind": "service_manifest",
+      "reason_category": "signature_or_node_binding_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "domain_export_root_tampered",
+      "kind": "domain_export",
+      "reason_category": "package_hash_or_root_binding_invalid"
+    },
+    {
+      "accepted": false,
+      "id": "domain_export_bad_package_hash",
+      "kind": "domain_export",
+      "reason_category": "package_hash_invalid"
+    }
+  ]
+}
