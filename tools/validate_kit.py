@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import re
@@ -37,6 +38,23 @@ SPECIAL_FACTS = {
     "resolution_proof": {"resolver_is_authority": False, "dns_used_as_authority": False},
     "domain_export_package": {"proprietary_btg_database_required": False, "dns_required_for_interpretation": False},
 }
+
+LOCAL_VENV_DIR_NAMES = {".venv", "venv"}
+
+
+def is_local_workspace_artifact(path: Path) -> bool:
+    rel = path.relative_to(ROOT)
+    parts = rel.parts
+    if not parts:
+        return False
+    top = ROOT / parts[0]
+    return parts[0] in LOCAL_VENV_DIR_NAMES and (top / "pyvenv.cfg").is_file()
+
+
+def should_skip(path: Path, strict_worktree: bool) -> bool:
+    if ".git" in path.parts:
+        return True
+    return not strict_worktree and is_local_workspace_artifact(path)
 
 
 def sha256(path: Path) -> str:
@@ -86,9 +104,9 @@ def reconstructable_mojibake_count(text: str) -> int:
     return count
 
 
-def check_clean_room(errors: list[str]) -> None:
+def check_clean_room(errors: list[str], strict_worktree: bool = False) -> None:
     for path in ROOT.rglob("*"):
-        if ".git" in path.parts or not path.is_file():
+        if should_skip(path, strict_worktree) or not path.is_file():
             continue
         rel = path.relative_to(ROOT).as_posix()
         if path.suffix.lower() in FORBIDDEN_SUFFIXES:
@@ -101,9 +119,9 @@ def check_clean_room(errors: list[str]) -> None:
             errors.append(f"unexpected Python implementation file: {rel}")
 
 
-def check_text(errors: list[str]) -> None:
+def check_text(errors: list[str], strict_worktree: bool = False) -> None:
     for path in ROOT.rglob("*"):
-        if ".git" in path.parts or not path.is_file():
+        if should_skip(path, strict_worktree) or not path.is_file():
             continue
         if path.suffix.lower() not in TEXT_SUFFIXES and path.name not in TEXT_NAMES:
             continue
@@ -128,10 +146,10 @@ def check_text(errors: list[str]) -> None:
             errors.append(f"reconstructable mojibake ({n}): {rel}")
 
 
-def check_json(errors: list[str]) -> dict[str, object]:
+def check_json(errors: list[str], strict_worktree: bool = False) -> dict[str, object]:
     parsed = {}
     for path in ROOT.rglob("*.json"):
-        if ".git" in path.parts:
+        if should_skip(path, strict_worktree):
             continue
         rel = path.relative_to(ROOT).as_posix()
         try:
@@ -223,11 +241,15 @@ def check_valid_schemas(errors: list[str]) -> None:
         validate_schema(instance, schema, errors)
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Validate the ENTITY Protocol 1.0 conformance kit.")
+    parser.add_argument("--strict-worktree", action="store_true", help="Include recognized local virtual-environment directories in clean-room checks.")
+    args = parser.parse_args(argv)
+
     errors: list[str] = []
-    check_clean_room(errors)
-    check_text(errors)
-    parsed = check_json(errors)
+    check_clean_room(errors, args.strict_worktree)
+    check_text(errors, args.strict_worktree)
+    parsed = check_json(errors, args.strict_worktree)
     check_protocol_hashes(parsed, errors)
     check_vectors(parsed, errors)
     check_valid_schemas(errors)
@@ -244,4 +266,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main(sys.argv[1:]))

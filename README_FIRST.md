@@ -1,4 +1,4 @@
-# Read This First — ENTITY Protocol 1.0 External Conformance Kit v1.0.1
+# Read This First — ENTITY Protocol 1.0 External Conformance Kit v1.0.2
 
 This repository is the **authoritative sealed clean-room external conformance challenge** for new ENTITY Protocol 1.0 qualification campaigns. Use a published release/tag of this repository as the exact allowed test material.
 
