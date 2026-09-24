@@ -21,9 +21,9 @@
       "sha256": "3095904a0ff2b1623232e97782221609de9487b894c0c93b790279c8a2c9ecdf"
     },
     {
-      "bytes": 713,
+      "bytes": 749,
       "path": ".github/workflows/kit-validation.yml",
-      "sha256": "a0ca140d0eb79a432ff0f5e3a70d5c7420b4a58d067a2e26506f3c186f346ca0"
+      "sha256": "098ca6fbb4706281acf991028413b7bfa612f61e530ba973c5a6b557e0432aae"
     },
     {
       "bytes": 187,
@@ -31,19 +31,49 @@
       "sha256": "474c5a80eb1af9eb45bb02eb7bec34099ffdea554630eec8dd4de30828d51de5"
     },
     {
-      "bytes": 1072,
+      "bytes": 1626,
       "path": "CHANGELOG.md",
-      "sha256": "0ae836f4409a56950715c174f45edcde194ae9e0ebbefcca675f7b6288652787"
+      "sha256": "99e96e882260a425046449be839c461c211dd7b57dcc6f096ceac8b6d1886c70"
     },
     {
-      "bytes": 2534,
-      "path": "conformance/black_box_tests/run_conformance.py",
-      "sha256": "3c05f4e264f71970733b8bacbaa9c49e16e13667736a9dc00928e4f6557f33b1"
+      "bytes": 424,
+      "path": "CONTRIBUTING.md",
+      "sha256": "b745fcf2d80496d4a04b4df04f1edf54b46c20611de926a30a349235ee507146"
     },
     {
-      "bytes": 4694,
-      "path": "conformance/expected_behaviour.json",
-      "sha256": "18060a3afb63d6df766edf824515c72a5e74312ecb21be703aacdc1688eb2a06"
+      "bytes": 1223,
+      "path": "IMPLEMENTER_CHECKLIST.md",
+      "sha256": "193b0d3a8b048b8ac513a67a87d2d334693d30f2ec51281f9effbff5e8dedc5a"
+    },
+    {
+      "bytes": 11357,
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "bytes": 340,
+      "path": "NOTICE",
+      "sha256": "7295593820be5c1daee06176cb0db765843d475e2300edabf9469749b3b0e561"
+    },
+    {
+      "bytes": 1502,
+      "path": "PROTOCOL_VERSION.json",
+      "sha256": "899297afa3efd7bdf72d6ce6c10fc264b8068ddb0d1922f46d6a77136ce94b21"
+    },
+    {
+      "bytes": 3552,
+      "path": "README.md",
+      "sha256": "3d7acb4c7cb85a6b212b08452936a6700a85862b9b629d70f2f4fedc096930bf"
+    },
+    {
+      "bytes": 2215,
+      "path": "README_FIRST.md",
+      "sha256": "ab80f1f9fcdb0ed44e62fceb8613f34924dca9f974b75ea2b7415e7150175e78"
+    },
+    {
+      "bytes": 408,
+      "path": "SECURITY.md",
+      "sha256": "9d20496a117a0d975a2e8a1a77e8a41c3edc3eea7fe5da6f0d2b16522d544540"
     },
     {
       "bytes": 987,
@@ -61,9 +91,14 @@
       "sha256": "94287d1418b3cc81005582f825651423f6b4a2db5a2ed5146eb298aa83b0a2a6"
     },
     {
-      "bytes": 424,
-      "path": "CONTRIBUTING.md",
-      "sha256": "b745fcf2d80496d4a04b4df04f1edf54b46c20611de926a30a349235ee507146"
+      "bytes": 2534,
+      "path": "conformance/black_box_tests/run_conformance.py",
+      "sha256": "3c05f4e264f71970733b8bacbaa9c49e16e13667736a9dc00928e4f6557f33b1"
+    },
+    {
+      "bytes": 4694,
+      "path": "conformance/expected_behaviour.json",
+      "sha256": "18060a3afb63d6df766edf824515c72a5e74312ecb21be703aacdc1688eb2a06"
     },
     {
       "bytes": 906,
@@ -81,16 +116,6 @@
       "sha256": "ded180d8f632a2a95741df32d11bd5610a46ab5bc73de2b62b7934b59719a5fb"
     },
     {
-      "bytes": 1223,
-      "path": "IMPLEMENTER_CHECKLIST.md",
-      "sha256": "193b0d3a8b048b8ac513a67a87d2d334693d30f2ec51281f9effbff5e8dedc5a"
-    },
-    {
-      "bytes": 11357,
-      "path": "LICENSE",
-      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
-    },
-    {
       "bytes": 1599,
       "path": "live_interop/PROCEDURE.md",
       "sha256": "5393edd57ac09b13007191a74439c7acf1463210093d58498d1c457589831919"
@@ -99,11 +124,6 @@
       "bytes": 643,
       "path": "live_interop/RESULT_TEMPLATE.json",
       "sha256": "ae06dbea34947a6e9ccac34bb7445e00b444eb1091d05407caf49506fca20a30"
-    },
-    {
-      "bytes": 340,
-      "path": "NOTICE",
-      "sha256": "7295593820be5c1daee06176cb0db765843d475e2300edabf9469749b3b0e561"
     },
     {
       "bytes": 768,
@@ -171,11 +191,6 @@
       "sha256": "76bb287fd80bd858b4798cd616e7e475cd9e224838382363d6f81cdb6322b618"
     },
     {
-      "bytes": 1502,
-      "path": "PROTOCOL_VERSION.json",
-      "sha256": "3b1c5819c5ea75166446d6f07935fdc4f5a94df39d85c48e4cb89afc0a0c84ea"
-    },
-    {
       "bytes": 824,
       "path": "provenance/INTERNAL_PREREQUISITES.json",
       "sha256": "96030191aad83a4fb7cb930e9b78272048783e73e762d48ae67c20fb4838054d"
@@ -186,19 +201,14 @@
       "sha256": "b9e5f2b72a05fe6af5c5da6a7280d79ee1d714ba265ff3d28c706589cd7e4c14"
     },
     {
-      "bytes": 3328,
-      "path": "README.md",
-      "sha256": "68c414daec2614f2b76d8b6053105c51793e8573275284be8456dc0c0b46f923"
-    },
-    {
-      "bytes": 2215,
-      "path": "README_FIRST.md",
-      "sha256": "16f6a7ed5645dafc528f425d9d89246d71497f2f509490f58bad283869f7aef6"
-    },
-    {
       "bytes": 41,
       "path": "requirements-ci.txt",
       "sha256": "c3d250756aeed3e883cc5a3929db399ad2d7c8de536f9da6b47e539c0c16af9b"
+    },
+    {
+      "bytes": 412,
+      "path": "schemas/README.md",
+      "sha256": "903b58778c1760db386b04cf2857502718e66f81c0ffa7c8f041f2bc53b1f769"
     },
     {
       "bytes": 1944,
@@ -256,11 +266,6 @@
       "sha256": "86c7a13577ab99467955001c0a9b580db6d037e1823eebf031ad389a771c81db"
     },
     {
-      "bytes": 412,
-      "path": "schemas/README.md",
-      "sha256": "903b58778c1760db386b04cf2857502718e66f81c0ffa7c8f041f2bc53b1f769"
-    },
-    {
       "bytes": 1266,
       "path": "schemas/relationship.schema.json",
       "sha256": "d14004a7b14d853200e7b226fd15f904b7626b9927bdf086dab6c2e8d2d1100c"
@@ -291,19 +296,14 @@
       "sha256": "f845db9b51bcbedea046dbc3d99aa84448005bc71bc89a92d19ecb21d294c6cb"
     },
     {
-      "bytes": 408,
-      "path": "SECURITY.md",
-      "sha256": "9d20496a117a0d975a2e8a1a77e8a41c3edc3eea7fe5da6f0d2b16522d544540"
-    },
-    {
-      "bytes": 9589,
+      "bytes": 10614,
       "path": "tools/validate_kit.py",
-      "sha256": "a68c9cf27864636459d7c677dcea2c88dbae4c66b6eee4ee24e850c60929c58f"
+      "sha256": "d7bf60eb5e5d115d7fab4bdbca98bcff7b385c038335bfdf6993458228756eb3"
     },
     {
-      "bytes": 5531,
+      "bytes": 6310,
       "path": "tools/verify_kit.py",
-      "sha256": "8101f4c2faa673b3c166ed782a3a95081430c176ab692a6575b9ebbc53eb9528"
+      "sha256": "f5b4b58943d8f8b7c00a45cecbd3b1d6245a56f2e59c5cee2d0abde0af1ac06a"
     },
     {
       "bytes": 1684,
@@ -314,6 +314,21 @@
       "bytes": 1146,
       "path": "trust/TRUST_BOUNDARY.md",
       "sha256": "1b121dc3c07d9efa7aba4fdd478ad495a2748daa75575aa3316a8bfb3c083bdd"
+    },
+    {
+      "bytes": 638,
+      "path": "vectors/README.md",
+      "sha256": "7c982c7496e66d2fd9f052bbea7bfbe2852d81e333f001622630e5fccdb7507b"
+    },
+    {
+      "bytes": 694,
+      "path": "vectors/SYNTHETIC_VECTOR_IDENTITIES.json",
+      "sha256": "404a372d953df8c9144f8fb012bc9afa583cd90eb1b350ff1437dfc9ea69d0b0"
+    },
+    {
+      "bytes": 9371,
+      "path": "vectors/VECTOR_MANIFEST.json",
+      "sha256": "d9adc4b30e6f81f4ec7fc7284980f836755632bcb6b129035051e91b29d94977"
     },
     {
       "bytes": 791,
@@ -391,16 +406,6 @@
       "sha256": "bc8647cc5c4b5f8770e17f8d7a1684def1b8b10798205faf23bd2ce65face005"
     },
     {
-      "bytes": 638,
-      "path": "vectors/README.md",
-      "sha256": "7c982c7496e66d2fd9f052bbea7bfbe2852d81e333f001622630e5fccdb7507b"
-    },
-    {
-      "bytes": 694,
-      "path": "vectors/SYNTHETIC_VECTOR_IDENTITIES.json",
-      "sha256": "404a372d953df8c9144f8fb012bc9afa583cd90eb1b350ff1437dfc9ea69d0b0"
-    },
-    {
       "bytes": 788,
       "path": "vectors/valid/asset_envelope_v1_1.json",
       "sha256": "5bd173305038cab1a2defe84bf9e1184fe6f1fd86b513c6c6b230e0ed7b54f0c"
@@ -454,16 +459,11 @@
       "bytes": 1370,
       "path": "vectors/valid/service_manifest.json",
       "sha256": "57931f0d39b907c7e19faacb3c257db93fdf3d0a36cef2bf442ab6fbc715420b"
-    },
-    {
-      "bytes": 9371,
-      "path": "vectors/VECTOR_MANIFEST.json",
-      "sha256": "d9adc4b30e6f81f4ec7fc7284980f836755632bcb6b129035051e91b29d94977"
     }
   ],
   "authoritative_for_new_campaigns": true,
   "canonical_repository": "blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit",
-  "claim": "Authoritative sealed public clean-room conformance target for new independent ENTITY Protocol 1.0 qualification campaigns. Signature proves kit integrity and release-signer key possession; external interoperability remains pending until independently authored evidence passes every required gate.",
+  "claim": "Authoritative sealed public clean-room conformance target for new independent ENTITY Protocol 1.0 qualification campaigns. v1.0.2 changes developer-workspace validation only; protocol semantics, schemas, vectors and pass criteria are unchanged. Signature proves kit integrity and release-signer key possession; external interoperability remains pending until independently authored evidence passes every required gate.",
   "clean_room": {
     "private_signer_state_distributed": false,
     "production_state_included": false,
@@ -471,9 +471,9 @@
     "vector_generation_state_included": false
   },
   "external_interoperability_status": "PENDING",
-  "generated_at_ms": 1789704171238,
-  "kit_id": "ENTITY_PROTOCOL_1_0_CONFORMANCE_KIT_v1.0.1",
-  "kit_version": "1.0.1",
+  "generated_at_ms": 1790258669898,
+  "kit_id": "ENTITY_PROTOCOL_1_0_CONFORMANCE_KIT_v1.0.2",
+  "kit_version": "1.0.2",
   "protocol": "ENTITY-1.0",
   "public_trust_root_sha256": "92f2091ac3fea80989ce38537a0087ee06ca9f748a9d1037b0a355d8ecffd0b8",
   "release_signer_entity_id": "ent2-3vutraoer24deek2uv54sbiob2xim5xejbu6lybhk7cxgptgwkwa",
@@ -481,10 +481,10 @@
   "signature": {
     "entity_id": "ent2-3vutraoer24deek2uv54sbiob2xim5xejbu6lybhk7cxgptgwkwa",
     "key_id": "sig-a3db5951877a801c",
-    "payload_sha256": "cea7371946bb1c758f7744bdc478f255ab81ddbc8c196354ff2569fc09c58925",
-    "signature": "Nza3tBQCzmtwY_DyxMQaHf5sGo3eqWM_0rcbhrS73RO-BlAk_g3T1PEDwPZ9XDdIa1tv_-TwXuT16S5VC0cyAg",
+    "payload_sha256": "8a2d139260c5f571cb271c819ed6a9945f86ff9a8f216c077207cedd89775e14",
+    "signature": "qtDGtKCX8zTSwe7xjhACtn1OEdIEN760Df-sz2AEujFuDAxKWEINXQmMHOOMzfBnbo3hCL-VdvreW0m6riXrBg",
     "signature_schema": "entity-signature-record-v2",
-    "signed_at_ms": 1789704171241,
+    "signed_at_ms": 1790258669945,
     "suite": "ENTITY-SIG-ED25519-v1"
   },
   "source_entity_public_commit": "dca93ae228ed39e4441138822ec0d0972b970f2c",

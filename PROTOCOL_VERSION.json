@@ -8,7 +8,7 @@
   "independent_implementation_required": true,
   "interoperability_profile_sha256": "a076649afad97bee95691fb39eaf256ac1c748a4c10e20da69561a91eb3e23b8",
   "kit_name": "ENTITY Protocol 1.0 External Conformance Kit",
-  "kit_version": "1.0.1",
+  "kit_version": "1.0.2",
   "principal_binding_profile_sha256": "aa3c66a6fea16fbbf1f3fb2196c6b3caad106ccccd475bd2779139f878d1bf9b",
   "protocol": "ENTITY-1.0",
   "protocol_freeze_sha256": "3b291b58766b1dfc3e3738888eefbce476070b5ba9658c23b4eaae50378c6d87",

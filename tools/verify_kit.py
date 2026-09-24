@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import argparse
 import base64
 import hashlib
 import json
@@ -13,6 +14,17 @@ ROOT = Path(__file__).resolve().parents[1]
 SIGNED = ROOT / "SIGNED_KIT_MANIFEST.json"
 TRUST = ROOT / "trust" / "ENTITY_RELEASE_SIGNER_PUBLIC.json"
 SUMS = ROOT / "SHA256SUMS.txt"
+
+LOCAL_VENV_DIR_NAMES = {".venv", "venv"}
+
+
+def is_local_workspace_artifact(path: Path) -> bool:
+    rel = path.relative_to(ROOT)
+    parts = rel.parts
+    if not parts:
+        return False
+    top = ROOT / parts[0]
+    return parts[0] in LOCAL_VENV_DIR_NAMES and (top / "pyvenv.cfg").is_file()
 
 
 def canonical_json(value) -> bytes:
@@ -69,7 +81,7 @@ def verify_signature_record(trust: dict, payload: dict, record: dict) -> None:
     pub.verify(b64url_decode(signature), canonical_json(signed_record))
 
 
-def verify_sha256sums() -> None:
+def verify_sha256sums(strict_worktree: bool = False) -> None:
     if not SUMS.is_file():
         raise ValueError("SHA256SUMS.txt missing")
     listed = set()
@@ -87,6 +99,8 @@ def verify_sha256sums() -> None:
     for path in ROOT.rglob("*"):
         if not path.is_file() or ".git" in path.parts or "__pycache__" in path.parts:
             continue
+        if not strict_worktree and is_local_workspace_artifact(path):
+            continue
         rel = path.relative_to(ROOT).as_posix()
         if rel == "SHA256SUMS.txt":
             continue
@@ -99,7 +113,11 @@ def verify_sha256sums() -> None:
         raise ValueError("checksummed file(s) absent: " + ", ".join(missing))
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Verify the signed ENTITY Protocol 1.0 conformance kit.")
+    parser.add_argument("--strict-worktree", action="store_true", help="Treat recognized local virtual-environment files as unsealed extras.")
+    args = parser.parse_args(argv)
+
     errors = []
     try:
         trust = json.loads(TRUST.read_text(encoding="utf-8"))
@@ -121,7 +139,7 @@ def main() -> int:
                 raise ValueError(f"signed artifact hash mismatch: {rel}")
             if path.stat().st_size != artifact["bytes"]:
                 raise ValueError(f"signed artifact size mismatch: {rel}")
-        verify_sha256sums()
+        verify_sha256sums(args.strict_worktree)
     except Exception as exc:
         errors.append(str(exc))
 
@@ -137,4 +155,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main(sys.argv[1:]))

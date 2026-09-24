@@ -14,7 +14,7 @@ This repository intentionally contains **no ENTITY reference runtime, no BTG Pyt
 
 ## Kit status
 
-**ENTITY Protocol 1.0 External Conformance Kit v1.0.1 — AUTHORITATIVE SEALED EXTERNAL TEST TARGET**
+**ENTITY Protocol 1.0 External Conformance Kit v1.0.2 — AUTHORITATIVE SEALED EXTERNAL TEST TARGET**
 
 Internal prerequisites used to open this external milestone:
 - SearchAR Release Integrity v2: PASS.
@@ -55,7 +55,7 @@ Before implementing anything:
     python tools/validate_kit.py
     python tools/verify_kit.py
 
-Both commands MUST report `valid: true`.
+Both commands MUST report `valid: true`. A normal developer checkout may use a recognized local virtual environment at `.venv` or `venv`; those local environment files are excluded from the default workspace scan. Release/CI qualification uses `--strict-worktree`.
 
 The independent implementation SHOULD live in its **own repository**. Do not add candidate implementation code to this sealed kit repository; this repository is the fixed public test target.
 

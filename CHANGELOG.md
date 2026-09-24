@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.2 — 2026-09-24
+
+Developer-workspace maintenance release. No ENTITY Protocol 1.0 semantic changes.
+
+- Fixes issue #6 by allowing recognized local Python virtual environments (`.venv` or `venv`) during normal kit validation and verification.
+- Keeps a `--strict-worktree` mode for release/CI checks so packaged kit contents remain contamination-sensitive.
+- Preserves all protocol specifications, schemas, vectors, pass criteria, and external interoperability status.
+- Re-seals the maintenance release under the existing ENTITY release signer.
+
 ## v1.0.1 — 2026-09-17
 
 Canonicalization release. No ENTITY Protocol 1.0 semantic changes.
