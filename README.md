@@ -1,5 +1,10 @@
 # ENTITY Protocol 1.0 External Conformance Kit
 
+[![Release](https://img.shields.io/github/v/release/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit?sort=semver)](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit/releases/latest)
+[![Kit validation](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit/actions/workflows/kit-validation.yml/badge.svg)](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit/actions/workflows/kit-validation.yml)
+[![License](https://img.shields.io/github/license/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)](LICENSE)
+
+[ENTITY](https://github.com/blackmore-technology-group/ENTITY) | [Independent interoperability challenge](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/INTEROPERABILITY_CHALLENGE.md) | [v3.3 engineering discussion](https://github.com/blackmore-technology-group/ENTITY/discussions/34)
 > **AUTHORITATIVE SEALED TEST TARGET**
 >
 > This repository is the canonical Blackmore Technology Group external-conformance target for new ENTITY Protocol 1.0 qualification campaigns. Independent candidate implementations MUST live in their own repositories and MUST use a specific published release/tag of this kit.
