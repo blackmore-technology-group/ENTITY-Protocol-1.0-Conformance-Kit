@@ -4,15 +4,6 @@ This repository is the **authoritative sealed clean-room external conformance ch
 
 Your task is **not** to install, wrap, call, port or inspect Blackmore Technology Group's ENTITY reference implementation. Your task is to implement the observable semantics of ENTITY Protocol 1.0 from the material in this repository alone.
 
-## New implementer orientation
-
-If ENTITY terminology is unfamiliar, read these two short navigation aids before the normative material:
-
-- [`GLOSSARY.md`](GLOSSARY.md) — plain-language definitions for `vector`, Entity/root, alias, authority, sovereign authority, key state, lineage and the controlled values used by the kit;
-- [`IMPLEMENTER_OBJECT_MAP.md`](IMPLEMENTER_OBJECT_MAP.md) — what each public object family is for and a suggested implementation order.
-
-These are onboarding aids only. They do not override the sealed schemas, protocol rules, vectors or pass criteria.
-
 ## Minimum challenge
 
 Your independent implementation MUST be able to:
@@ -47,8 +38,6 @@ You MUST NOT use:
 Questions about specification interpretation are allowed. Questions about how BTG Python classes implement behavior are outside the clean-room boundary.
 
 Start with:
-- `GLOSSARY.md`
-- `IMPLEMENTER_OBJECT_MAP.md`
 - `protocol/ENTITY_PROTOCOL_1_0_INTEROPERABILITY_PROFILE.md`
 - `protocol/CANONICALIZATION_AND_CRYPTOGRAPHY.md`
 - `profiles/CLEAN_ROOM_RULES.md`
